@@ -1,0 +1,11 @@
+TCL REGELWERK IMPORT
+
+Alle fünf Hauptkapitel des bereitgestellten Word-Regelwerks wurden in data.js übernommen. Wortlaut und Paragraphennummerierung bleiben unverändert (einschließlich eventueller Tippfehler und fehlender Paragraphennummern).
+
+Bitte vor Veröffentlichung inhaltlich prüfen:
+- §1.14 nennt PmaVoice/Ts3, möglicherweise veralteter Voice-Hinweis.
+- §3.4 spricht von Polizeiwache/Polizei, der Server nutzt inzwischen State Police.
+- §4.8 enthält Aussagen über IP-Adressen und Einwilligung, die mit tatsächlicher Verarbeitung und Datenschutzhinweisen abgeglichen werden müssen.
+- §4.2 enthält eine pauschale Regel zu Aufnahmen/Stimmen; rechtlich prüfen.
+
+Hochladen: Dateien aus diesem Verzeichnis ins Root des GitHub-Repositories tcl-community hochladen und vorhandene Dateien ersetzen.
