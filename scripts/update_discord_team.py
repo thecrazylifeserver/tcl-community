@@ -41,14 +41,27 @@ def public_member(m):
     else:avatar=None
     return {'name':str(name)[:100],'avatar':avatar}
 
-team=[];helpers=[]
+# Höchster Rang gewinnt; Team-/Helferrollen bleiben der Fallback.
+RANKS = [{'name': 'Projektleiter', 'id': '1043272080512274554', 'icon': '👑'}, {'name': 'Developer', 'id': '1043277862104477746', 'icon': '💻'}, {'name': 'Senior Admin', 'id': '1043272335467216916', 'icon': '🛡️'}, {'name': 'Admin', 'id': '1043272317607874611', 'icon': '🛡️'}, {'name': 'Junior Admin', 'id': '1043272509774102690', 'icon': '🔰'}, {'name': 'Community Manager', 'id': '1043272585368047727', 'icon': '💬'}, {'name': 'Supportleitung', 'id': '1043273140643573940', 'icon': '🎧'}, {'name': 'Supporter', 'id': '1043273227012689980', 'icon': '🤝'}]
+rank_groups = [{'name': rank['name'], 'icon': rank['icon'], 'members': []} for rank in RANKS]
+team=[]; helpers=[]
 for m in members:
     roles=set(m.get('roles') or [])
     entry=public_member(m)
     if not entry:continue
-    if team_role in roles:team.append(entry)
-    elif helper_role in roles:helpers.append(entry) # Team hat Vorrang bei beiden Rollen
+    matched=False
+    for pos,rank in enumerate(RANKS):
+        if rank['id'] in roles:
+            rank_groups[pos]['members'].append(entry)
+            matched=True
+            break
+    if not matched:
+        if team_role in roles:team.append(entry)
+        elif helper_role in roles:helpers.append(entry)
+for group in rank_groups:
+    group['members'].sort(key=lambda x:x['name'].casefold())
 for li in (team,helpers):li.sort(key=lambda x:x['name'].casefold())
-payload={'updated':datetime.datetime.now(datetime.timezone.utc).isoformat(),'team':team,'helpers':helpers}
+payload={'updated':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+         'ranks':rank_groups,'team':team,'helpers':helpers}
 Path('team.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(f'Erfolgreich: {len(team)} Team-Mitglieder und {len(helpers)} Helfer')
+print(f'Erfolgreich: {sum(len(g["members"]) for g in rank_groups)} mit Rang, {len(team)} weitere Team-Mitglieder, {len(helpers)} Helfer')

@@ -1,43 +1,5 @@
 {
-  "updated": "2026-10-15T03:11:04.413280+00:00",
-  "team": [
-    {
-      "name": "[TCL] get_lucky",
-      "avatar": "https://cdn.discordapp.com/avatars/324599458237251614/46be6cc53cee5b682ef1b70f2c647268.png?size=128"
-    },
-    {
-      "name": "[TCL] ITZ_CRAZY_ME",
-      "avatar": "https://cdn.discordapp.com/guilds/1043265423585575073/users/335828193007370243/avatars/3170092365523621fac27022ee3516b1.png?size=128"
-    },
-    {
-      "name": "[TCL] LucifersHass",
-      "avatar": "https://cdn.discordapp.com/avatars/636469731456450560/78fd75c3d639a710367f254a74bc2a91.png?size=128"
-    },
-    {
-      "name": "[TCL] TheDragonsSkills",
-      "avatar": "https://cdn.discordapp.com/avatars/413090473872326656/ef4ec2f502f7a303db642d17eaac9c0b.png?size=128"
-    },
-    {
-      "name": "[TCL] 𝔗𝔥𝔢𝔇𝔢𝔪𝔬𝔫ℑ𝔫𝔜𝔬𝔲",
-      "avatar": "https://cdn.discordapp.com/avatars/867753352045789224/f804967e03636cf8eb000070ab28938d.png?size=128"
-    }
-  ],
-  "helpers": [
-    {
-      "name": "Basti3392",
-      "avatar": "https://cdn.discordapp.com/avatars/640184174015414272/415ce37ff47f303e36be7cdcb50d7cde.png?size=128"
-    },
-    {
-      "name": "DieBehindertenAufsicht",
-      "avatar": "https://cdn.discordapp.com/avatars/1204797983749832714/726b4130bf01d1930390776fbca881cb.png?size=128"
-    },
-    {
-      "name": "ℋ𝒶𝓁𝓁𝓎𝓌ℯ𝓁𝓁",
-      "avatar": "https://cdn.discordapp.com/avatars/143728329499869184/4aa859d042ce9fec05a85979952ea356.png?size=128"
-    },
-    {
-      "name": "𝕭𝖑𝖆𝖉𝖊𝕿𝖔𝖇𝖎",
-      "avatar": "https://cdn.discordapp.com/avatars/295577108644626432/695db18b024116187f7fd8124eff9229.png?size=128"
-    }
-  ]
+  "updated": null,
+  "team": [],
+  "helpers": []
 }
