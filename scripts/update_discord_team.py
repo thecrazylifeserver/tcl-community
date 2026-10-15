@@ -45,6 +45,8 @@ def public_member(m):
 RANKS = [{'name': 'Projektleiter', 'id': '1043272080512274554', 'icon': '👑'}, {'name': 'Developer', 'id': '1043277862104477746', 'icon': '💻'}, {'name': 'Senior Admin', 'id': '1043272335467216916', 'icon': '🛡️'}, {'name': 'Admin', 'id': '1043272317607874611', 'icon': '🛡️'}, {'name': 'Junior Admin', 'id': '1043272509774102690', 'icon': '🔰'}, {'name': 'Community Manager', 'id': '1043272585368047727', 'icon': '💬'}, {'name': 'Supportleitung', 'id': '1043273140643573940', 'icon': '🎧'}, {'name': 'Supporter', 'id': '1043273227012689980', 'icon': '🤝'}]
 rank_groups = [{'name': rank['name'], 'icon': rank['icon'], 'members': []} for rank in RANKS]
 team=[]; helpers=[]
+if not members:
+    raise SystemExit('Discord meldet null Servermitglieder. team.json wird zur Sicherheit nicht überschrieben.')
 for m in members:
     roles=set(m.get('roles') or [])
     entry=public_member(m)
