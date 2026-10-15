@@ -35,12 +35,5 @@ window.TCL_RULES = [
     "title": "§5 Weitere Regeln",
     "status": "Importiert",
     "content": "<h3>§5.1 Schlüsselsystem</h3>\n<p>Das ausnutzen von Bugs im System werden mit einem Bann bestraft!</p>\n<p>Türen dürfen nicht aus “Unrealistischen” positionen aufgeschlossen oder aufgebrochen werden!</p>\n<p>Das Abnehmen von Schlüsseln ist erlaubt, dieses jedoch bitte nicht Übertreiben.</p>\n<h3>§5.2 Anschreiben von Teammitgliedern im Discord</h3>\n<p>Das anschreiben von Teammitgliedern im Discord ist Untersagt und wird bei mehrfachen verstoß zu Verwarnungen oder auch einem Timeout führen!</p>\n<p>Warns oder Bans dürfen nur mit Absprache der Supportleitung oder höher Rängigen, von Supportern verhängt werden. <br><br><br>Das Team behält sich das recht vor das Regelwerk jederzeit anzupassen.<br><br>Das RP steht an erster Stelle am ende des Tages wollen wir alle nur Spaß haben !</p>"
-  },
-  {
-    "id": "einstieg",
-    "group": "Anleitungen",
-    "title": "So kommst du auf TCL",
-    "status": "Vorlage",
-    "content": "<p>So findest du The Crazy Life:</p><ol><li>Tritt unserem <a href=\"https://discord.gg/RqWHQWPMZW\" target=\"_blank\" rel=\"noopener\">Discord</a> bei.</li><li>Informiere dich über die aktuell gültigen Zugangs- und Allowlist-Voraussetzungen.</li><li>Verbinde dich über die FiveM-Serverliste oder den <a href=\"https://cfx.re/join/6myl598\" target=\"_blank\" rel=\"noopener\">Direktlink</a>.</li></ol><p>Prüft diese Anleitung vor Freigabe auf Aktualität.</p>"
   }
 ];
