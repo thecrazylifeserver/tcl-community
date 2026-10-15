@@ -44,7 +44,3 @@ window.TCL_RULES = [
     "content": "<p>So findest du The Crazy Life:</p><ol><li>Tritt unserem <a href=\"https://discord.gg/RqWHQWPMZW\" target=\"_blank\" rel=\"noopener\">Discord</a> bei.</li><li>Informiere dich über die aktuell gültigen Zugangs- und Allowlist-Voraussetzungen.</li><li>Verbinde dich über die FiveM-Serverliste oder den <a href=\"https://cfx.re/join/6myl598\" target=\"_blank\" rel=\"noopener\">Direktlink</a>.</li></ol><p>Prüft diese Anleitung vor Freigabe auf Aktualität.</p>"
   }
 ];
-window.TCL_NEWS = [
- {date:'2026-10-15',category:'Vorlage',title:'Willkommen im TCL Community-Portal',excerpt:'Unsere neue Anlaufstelle für Regelwerke, Serverinformationen und Neuigkeiten.',details:'Dies ist ein Beispielbeitrag. Passe ihn vor der öffentlichen Ankündigung an.'},
- {date:'2026-10-15',category:'Changelog-Muster',title:'Hier erscheinen eure Updates',excerpt:'Serververbesserungen, neue Funktionen und Fehlerbehebungen gesammelt an einem Ort.',details:'Beispiel: Neue Features, Änderungen und behobene Fehler in eurem eigenen Wortlaut eintragen.'}
-];
